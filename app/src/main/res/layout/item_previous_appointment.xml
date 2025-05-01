@@ -1,0 +1,105 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="onItemClick"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/card_background"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"> <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr Denies Martine"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/for_doctor_card"
+            android:fontFamily="@font/montserrat_semibold" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 15/02/2026"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 14:30"
+            android:textSize="14sp"
+            android:textColor="@color/holo_blue_dark"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:id="@+id/tvRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Days Remaining"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Phone: +77076280537"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Email: a.alihan0106@gmail.com"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <TextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Created: 2025-04-08 18:46:38.242"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical|end" android:src="@drawable/ic_trash" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

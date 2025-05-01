@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.profile.ProfileFragment"
+    android:paddingBottom="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:clipToPadding="false"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_profile"
+                        android:layout_width="334dp"
+                        android:layout_height="148dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="39dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_profile_image"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="174dp"
+                            android:layout_height="61dp"
+                            android:layout_marginTop="39dp"
+                            android:layout_weight="1"
+                            android:text="@string/no_name"
+                            android:textSize="25sp"
+                            android:fontFamily="@font/urbanist_black"
+                            tools:ignore="NestedWeights" />
+
+                        <TextView
+                            android:id="@+id/tvNumber"
+                            android:layout_width="174dp"
+                            android:layout_height="61dp"
+                            android:layout_weight="1"
+                            android:text="@string/_7_777_777_7777"
+                            android:textSize="20dp"
+                            tools:ignore="SpUsage"
+                            android:fontFamily="@font/urbanist_medium" />
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="174dp"
+                            android:layout_height="61dp"
+                            android:layout_weight="1"
+                            android:text="@string/not_defined"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/urbanist_medium" />
+
+                        <TextView
+                            android:id="@+id/tvErrorMessage"
+                            android:layout_width="174dp"
+                            android:layout_height="61dp"
+                            android:layout_weight="1"
+                            android:text="@string/error"
+                            android:textColor="#FF0000"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_change_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="@string/change_picture"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/bt_edit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp"
+                    android:text="@string/edit_name"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_my_appointments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/my_appointments"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_notifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/notifications"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_documents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/my_documents"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_change_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/change_contact"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/change_password"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                    <TextView
+                        android:id="@+id/tv_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:fontFamily="@font/urbanist_medium"
+                        android:padding="16dp"
+                        android:text="@string/settings"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_faqs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:padding="16dp"
+                    android:text="@string/faqs"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:drawableRightCompat="@drawable/ic_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:padding="16dp"
+                    android:text="@string/about_us"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:drawableRightCompat="@drawable/ic_arrow_right" />
+                <TextView
+                    android:id="@+id/tv_log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/urbanist_medium"
+                    android:padding="16dp"
+                    android:text="@string/log_out"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp"
+                    app:drawableRightCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

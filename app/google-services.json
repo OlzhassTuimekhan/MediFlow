@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "340290938892",
+    "project_id": "olzhass-patient-app",
+    "storage_bucket": "olzhass-patient-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340290938892:android:59e05b2cc707c362ede629",
+        "android_client_info": {
+          "package_name": "kz.olzhass.kolesa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-11F-x-HznayeDMkAx9M6axNT719Pn4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

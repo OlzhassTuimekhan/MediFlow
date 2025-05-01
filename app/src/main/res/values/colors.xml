@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="selectedColor">#2A7FBA</color>
+    <color name="unselectedTextColor">#2A7FBA</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="for_doctor_card">#1C665E</color>
+    <color name="holo_blue_dark">#2A7FBA</color>
+    <color name="gray_for_background">#F0F3F5</color>
+    <color name="colorPrimary">#007BFF</color>
+    <color name="colorPrimaryDark">#0056b3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="gray_text">#777777</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="gray_border">#CCCCCC</color>
+    <color name="orange">#FFBF00</color>
+    <color name="green">#50C878</color>
+</resources>

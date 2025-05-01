@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:onClick="onItemClick"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/urbanist_medium"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvDocumentType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Type"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDoctorName" />
+
+
+
+        <TextView
+            android:id="@+id/documentData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textStyle="italic"
+            android:text="Документ не найден" />
+
+        <ImageView
+            android:id="@+id/documentPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvDocumentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Date"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/urbanist_medium"
+            app:layout_constraintTop_toBottomOf="@id/tvDocumentType" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:text="@string/download"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

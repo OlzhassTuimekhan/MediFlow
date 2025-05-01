@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_new_password" translatable="false">Жаңа құпиясөз жасаңыз!</string>
+    <string name="enter_your_email" translatable="false">Электрондық поштаны енгізіңіз</string>
+    <string name="your_new_password_must_be_unique_from_those_previously_used" translatable="false">"         Сіздің жаңа құпия сөзіңіз бұрын қолданылғандардан өзгеше болуы керек.     "</string>
+    <string name="login" translatable="false">Кіру</string>
+    <string name="successfully_registered" translatable="false">Сәтті тіркелді!</string>
+
+    <!-- Ниже идут переведённые строки -->
+    <string name="app_name">MediFlow</string>
+    <string name="otp_verification">OTP растау</string>
+    <string name="back_to_login">Кіру бетіне оралу</string>
+    <string name="confirm_your_password">Құпиясөзіңізді растаңыз</string>
+    <string name="send_code">Кодты жіберу</string>
+    <string name="reset_password">Құпиясөзді бұзу</string>
+    <string name="agree_and_register">Келісіп, тіркелу</string>
+    <string name="you_already_have_an_account_log_in_now">Аккаунтыңыз бар ма? Қазір кіру</string>
+    <string name="title_activity_home_page">Басты бет</string>
+    <string name="title_home">Басты</string>
+    <string name="title_dashboard">Басқару панелі</string>
+    <string name="title_notifications">Хабарландырулар</string>
+    <string name="my_appointments">Менің кездесулерім</string>
+    <string name="profile">Профиль</string>
+    <string name="all_doctors">Барлық дәрігерлер</string>
+    <string name="remember_password_login">Құпиясөзіңіз есіңізде ме? Кіру</string>
+    <string name="home">Басты</string>
+    <string name="appoitments">Жазбалар</string>
+    <string name="doctors">Дәрігерлер</string>
+    <string name="profilee">Профиль</string>
+    <string name="calendar">Күнтізбе</string>
+    <string name="forgot_password">Құпиясөзді ұмыттыңыз ба?</string>
+    <string name="don_t_worry_it_occurs_please_enter_the_email_address_linked_with_your_account">
+        Уайымдамаңыз! Мұндай жағдай болады. Өтінеміз, аккаунтыңызбен байланысты электрондық поштаны енгізіңіз.
+    </string>
+    <string name="welcome_to">MediFlow-ге қош келдіңіз!</string>
+    <string name="register">Тіркелу</string>
+    <string name="welcome_back_glad_to_see_you_again">Қайта келдіңіз! Сізді қайта көргенімізге қуаныштымыз!</string>
+    <string name="enter_your_password">Құпиясөзіңізді енгізіңіз</string>
+    <string name="your_email_or_password_is_incorrect_please_try_again">
+        Сіздің электрондық поштаңыз немесе құпиясөзіңіз қате! Өтінеміз, қайтадан байқап көріңіз.
+    </string>
+    <string name="don_t_have_an_account_register_now">Аккаунтыңыз жоқ па? Қазір тіркеліңіз</string>
+    <string name="verify">Растаңыз</string>
+    <string name="didn_t_received_code_resend">Кодты алмадыңыз ба? Қайта жіберіңіз</string>
+    <string name="welcome_aboard_we_re_thrilled_to_have_you_join_us">Қош келдіңіз! Бізге қосылғаныңызға өте қуаныштымыз!</string>
+    <string name="enter_your_name">Атыңызды енгізіңіз</string>
+    <string name="_7_777_777_7777">+7 (777) 777-7777</string>
+    <string name="hello">Сәлем</string>
+    <string name="change_phone_number">Телефон нөмірін өзгерту</string>
+    <string name="change_name">Атыңызды өзгерту</string>
+    <string name="save">Сақтау</string>
+    <string name="change_password">Құпиясөзді өзгерту</string>
+    <string name="confirm_new_password">Жаңа құпиясөзіңізді нақтылаңыз</string>
+    <string name="enter_new_password">Жаңа құпиясөзді енгізіңіз</string>
+    <string name="change_picture">Суретті өзгерту</string>
+    <string name="edit_name">Атыңызды өңдеу</string>
+    <string name="notifications">Хабарламалар</string>
+    <string name="change_contact">Номерді өзгерту</string>
+    <string name="settings">Параметрлер</string>
+    <string name="faqs">Жиі қойылатын сұрақтар</string>
+    <string name="about_us">Біз туралы</string>
+    <string name="log_out">Шығу</string>
+    <string name="dialog_title_confirmation">Растау</string>
+    <string name="dialog_message_are_you_sure">Сіз сенімдісіз бе?</string>
+    <string name="dialog_button_yes">Иә</string>
+    <string name="dialog_button_no">Жоқ</string>
+    <string name="select_a_language">Тілді таңдаңыз:</string>
+    <string name="apply">Қолдану</string>
+    <string name="error">Қателік анықталды!!!</string>
+    <string name="no_name">Аты жоқ</string>
+    <string name="not_defined">Табылмады</string>
+    <string name="permission_denied">Фотосуретті таңдау үшін сізге рұқсат қажет.</string>
+</resources>

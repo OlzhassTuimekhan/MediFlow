@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.doctors.AllDoctorsFragment"
+    android:background="@color/gray_for_background"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:queryHint="Search Doctors"
+        android:textColorHint="@color/for_doctor_card"
+        android:textColor="@color/black"
+        android:iconifiedByDefault="false"
+        android:textSize="16sp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

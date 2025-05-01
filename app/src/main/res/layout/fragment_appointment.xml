@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.appointment.AppointmentFragment"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_return_back"
+            tools:ignore="MissingConstraints,OnClick"
+            tools:layout_editor_absoluteX="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/urbanist_bold"
+            android:text="Booking Appointment"
+            android:textColor="#1E232C"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_doctor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="@string/doctor_information"
+        android:textColor="#1E232C"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Имя доктора -->
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr Denies Martine"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/for_doctor_card"
+            android:fontFamily="@font/montserrat_semibold" />
+
+        <!-- Специальность -->
+        <TextView
+            android:id="@+id/tvSpecialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Гастроэнтерология"
+            android:textSize="14sp"
+            android:textColor="@color/for_doctor_card"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_semibold" />
+
+        <!-- Телефон -->
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="87072793054"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_medium" />
+
+        <!-- Услуги -->
+        <TextView
+            android:id="@+id/tvServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Первичная Консультация (7000.00), Повторная Консультация (5000.00)"
+            android:textSize="14sp"
+            android:textColor="@color/holo_blue_dark"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_choose_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="Choose Date:"
+        android:textColor="#1E232C"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />
+
+    <Button
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="10dp"
+        android:text="Pick"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="25.07.2006"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="Choose Time:"
+        android:textColor="#1E232C"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />
+
+    <Button
+        android:id="@+id/btnPickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="10dp"
+        android:text="Pick"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvSelectedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="14:00"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="Reason for the Visit:"
+        android:textColor="#1E232C"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton" />\
+
+    <EditText
+        android:id="@+id/etReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_rounded"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/urbanist_bold"
+        android:hint="@string/enter_your_reason"
+        android:layout_marginTop="10dp"
+        android:inputType="textLongMessage"
+        android:textColor="@android:color/black"
+        android:textColorHint="#FF9E9E9E"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_rounded_3"
+        android:fontFamily="@font/urbanist_bold"
+        android:onClick="onClickToLogin"
+        android:text="Book"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        tools:ignore="OnClick" />
+</LinearLayout>

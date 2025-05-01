@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Пример кастомного стиля для кнопок -->
+    <style name="MyBlueButton" parent="Widget.MaterialComponents.Button">
+        <!-- Размеры -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- Цвет фона (tint) -->
+        <item name="android:background">@color/blue</item>
+        <!-- Цвет текста -->
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Прочие настройки (скругления, шрифт, размер текста и т.д.) -->
+
+        <!-- Если используете layout_weight, обычно ставят ширину 0dp -->
+        <!-- <item name="android:layout_width">0dp</item> -->
+    </style>
+
+    <color name="blue">#1550D5</color>
+
+    <!-- Тема для BottomSheetDialogFragment -->
+    <style name="Theme.MyApp.BottomSheetDialog"
+        parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.MyApp.CustomBottomSheet</item>
+    </style>
+
+
+    <!-- Сам стиль BottomSheet -->
+    <style name="Widget.MyApp.CustomBottomSheet"
+        parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <!-- Форма -->
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.RoundedTop</item>
+        <!-- Прочие настройки -->
+        <item name="behavior_peekHeight">@dimen/bottom_sheet_peek_height</item>
+    </style>
+
+    <!-- Оверлей (Overlay) с описанием скруглённых углов для top -->
+    <style name="ShapeAppearanceOverlay.MyApp.RoundedTop" parent="">
+        <item name="cornerFamily">rounded</item>
+        <!-- Закругляем только верхние углы, нижние — 0dp -->
+        <item name="cornerSizeTopLeft">30dp</item>
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="RoundedTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <!-- Отключаем стандартный индикатор (линию под вкладкой) -->
+        <item name="tabIndicator">@null</item>
+
+        <!-- Если нужно закруглить сам фон TabLayout -->
+        <item name="android:background">@drawable/tab_layout_bg</item>
+
+        <!-- Задаём фоновый drawable для каждой вкладки (наш selector) -->
+        <item name="tabBackground">@drawable/tabs_selector</item>
+
+        <!-- Цвет текста для выбранной вкладки (белый) -->
+        <item name="tabSelectedTextColor">@color/white</item>
+
+        <!-- Цвет текста для невыбранных вкладок -->
+        <item name="tabTextColor">@color/unselectedTextColor</item>
+
+        <!-- При желании можно добавить отступы внутри вкладки -->
+        <!--
+        <item name="tabPaddingStart">16dp</item>
+        <item name="tabPaddingEnd">16dp</item>
+        -->
+    </style>
+
+    <style name="CustomSearchViewStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:queryHint">Search doctors</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+
+
+</resources>
+

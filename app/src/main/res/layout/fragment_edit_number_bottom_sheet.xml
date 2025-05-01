@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="40dp"
+    >
+
+
+    <!-- Текст с заголовком -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_phone_number"
+        android:fontFamily="@font/urbanist_bold"
+        android:textSize="30sp"
+        android:padding="8dp"
+        android:textAlignment="center"/>
+
+    <!-- Поле для ввода номера -->
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_rounded"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/urbanist_bold"
+        android:hint="@string/_7_777_777_7777"
+        android:inputType="phone"
+        android:textColor="@android:color/black"
+        android:textColorHint="#FF9E9E9E"
+        android:textSize="16sp"
+        android:maxLength="18"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Кнопка сохранения -->
+    <Button
+        android:id="@+id/btnSaveNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded"
+        android:fontFamily="@font/urbanist_bold"
+        android:onClick="onClickToLogin"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        />
+</LinearLayout>

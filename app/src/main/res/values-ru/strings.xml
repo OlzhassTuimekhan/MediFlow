@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_new_password" translatable="false">Создайте новый пароль!</string>
+    <string name="enter_your_email" translatable="false">Введите email</string>
+    <string name="your_new_password_must_be_unique_from_those_previously_used" translatable="false">Ваш новый пароль должен быть уникальным по сравнению с ранее использовавшимися.</string>
+    <string name="login" translatable="false">Войти</string>
+    <string name="successfully_registered" translatable="false">Успешно зарегистрирован!</string>
+
+    <!-- Ниже идут переведённые строки -->
+    <string name="app_name">MediFlow</string>
+    <string name="otp_verification">Подтверждение OTP</string>
+    <string name="back_to_login">Назад к входу</string>
+    <string name="confirm_your_password">Подтвердите пароль</string>
+    <string name="send_code">Отправить код</string>
+    <string name="reset_password">Сбросить пароль</string>
+    <string name="agree_and_register">Согласиться и зарегистрироваться</string>
+    <string name="you_already_have_an_account_log_in_now">У вас уже есть аккаунт? Войти сейчас</string>
+    <string name="title_activity_home_page">Главная страница</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Панель</string>
+    <string name="title_notifications">Уведомления</string>
+    <string name="my_appointments">Мои записи</string>
+    <string name="profile">Профиль</string>
+    <string name="all_doctors">Все врачи</string>
+    <string name="remember_password_login">Помните пароль? Войти</string>
+    <string name="home">Главная</string>
+    <string name="appoitments">Записи</string>
+    <string name="doctors">Врачи</string>
+    <string name="profilee">Профиль</string>
+    <string name="calendar">Календарь</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="don_t_worry_it_occurs_please_enter_the_email_address_linked_with_your_account">
+        Не переживайте! Это случается. Пожалуйста, введите адрес электронной почты, связанный с вашим аккаунтом.
+    </string>
+    <string name="welcome_to">Добро пожаловать в MediFlow!</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="welcome_back_glad_to_see_you_again">С возвращением! Рады видеть вас снова!</string>
+    <string name="enter_your_password">Введите пароль</string>
+    <string name="your_email_or_password_is_incorrect_please_try_again">
+        Ваш адрес электронной почты или пароль неверны! Пожалуйста, попробуйте ещё раз.
+    </string>
+    <string name="don_t_have_an_account_register_now">Нет аккаунта? Зарегистрируйтесь сейчас</string>
+    <string name="verify">Подтвердить</string>
+    <string name="didn_t_received_code_resend">Не получили код? Отправить снова</string>
+    <string name="welcome_aboard_we_re_thrilled_to_have_you_join_us">
+        Добро пожаловать! Мы очень рады, что вы к нам присоединились!
+    </string>
+    <string name="enter_your_name">Введите ваше имя</string>
+    <string name="_7_777_777_7777">+7 (777) 777-7777</string>
+    <string name="hello">ПРИВЕТ</string>
+    <string name="change_phone_number">Изменить номер телефона</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="save">Сохранить</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="confirm_new_password">Подтвердите новый пароль</string>
+    <string name="enter_new_password">Введите новый пароль</string>
+    <string name="change_picture">Изменить фото</string>
+    <string name="edit_name">Редактировать имя</string>
+    <string name="notifications">Уведомления</string>
+    <string name="change_contact">Изменить контакт</string>
+    <string name="settings">Настройки</string>
+    <string name="faqs">Частые вопросы</string>
+    <string name="about_us">О нас</string>
+    <string name="log_out">Выйти</string>
+
+    <string name="dialog_title_confirmation">Подтверждение</string>
+    <string name="dialog_message_are_you_sure">Вы уверены?</string>
+    <string name="dialog_button_yes">Да</string>
+    <string name="dialog_button_no">Нет</string>
+    <string name="select_a_language">Выберите язык:</string>
+    <string name="apply">Применить</string>
+    <string name="error">Ошибка!!!</string>
+    <string name="no_name">Нет Имя</string>
+    <string name="not_defined">Не Определен</string>
+    <string name="permission_denied">Для выбора фото нужно разрешение.</string>
+</resources>
