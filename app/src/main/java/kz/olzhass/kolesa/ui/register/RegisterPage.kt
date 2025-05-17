@@ -14,10 +14,10 @@ import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import kz.olzhass.kolesa.GlobalData
-import kz.olzhass.kolesa.ui.login.MainPage
 import kz.olzhass.kolesa.R
-import kz.olzhass.kolesa.ui.resetpassword.Success
 import kz.olzhass.kolesa.databinding.ActivityRegisterPageBinding
+import kz.olzhass.kolesa.ui.login.MainPage
+import kz.olzhass.kolesa.ui.resetpassword.Success
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -27,12 +27,12 @@ import okhttp3.RequestBody
 import okhttp3.Response
 import org.json.JSONObject
 import java.io.IOException
+
 //SCROLL PAGE ADD
 class RegisterPage : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterPageBinding
     val client = OkHttpClient()
 
-    // Отслеживаем текущее состояние видимости для каждого поля
     private var isPasswordVisible = false
     private var isPassword1Visible = false
     private var loadingDialog: LoadingDialogFragment? = null
@@ -54,13 +54,11 @@ class RegisterPage : AppCompatActivity() {
                 val name = binding.etName.text.toString()
                 val number = binding.etNumber.text.toString()
 
-                // Проверяем сначала email (пример, если у вас есть уже isEmailValid())
                 if (!isEmailValid(email)) {
                     binding.etEmail.error = "Invalid email address"
                     return@setOnClickListener
                 }
 
-                // Проверяем пароли
                 if (password.isEmpty()) {
                     binding.etPassword.error = "Please enter a password"
                     return@setOnClickListener
@@ -85,15 +83,13 @@ class RegisterPage : AppCompatActivity() {
             }
 
             ivTogglePassword.setOnClickListener {
-                // Слушатель для первой иконки
-                isPasswordVisible = !isPasswordVisible  // переключаем флаг
+                isPasswordVisible = !isPasswordVisible
                 togglePasswordVisibility(
                     binding.etPassword,
                     binding.ivTogglePassword,
                     isPasswordVisible
                 )
 
-                // Слушатель для второй иконки
                 ivTogglePassword1.setOnClickListener {
                     isPassword1Visible = !isPassword1Visible
                     togglePasswordVisibility(
@@ -156,15 +152,12 @@ class RegisterPage : AppCompatActivity() {
         isVisible: Boolean
     ) {
         if (isVisible) {
-            // Показываем пароль
             editText.transformationMethod = HideReturnsTransformationMethod.getInstance()
-            icon.setImageResource(R.drawable.ic_eye_on) // иконка «глаз открыт»
+            icon.setImageResource(R.drawable.ic_eye_on)
         } else {
-            // Скрываем пароль
             editText.transformationMethod = PasswordTransformationMethod.getInstance()
-            icon.setImageResource(R.drawable.ic_eye_off) // иконка «глаз закрыт»
+            icon.setImageResource(R.drawable.ic_eye_off)
         }
-        // Переводим курсор в конец поля, чтобы не сбивался текст
         editText.setSelection(editText.text.length)
     }
 
@@ -174,7 +167,7 @@ class RegisterPage : AppCompatActivity() {
     }
 
     private fun register(email: String, password: String, name: String, number: String) {
-        val url = "http://${GlobalData.ip}:3000/register" // Укажи адрес твоего сервера
+        val url = "http://${GlobalData.ip}:3000/register"
         showLoading()
 
         val json = JSONObject().apply {

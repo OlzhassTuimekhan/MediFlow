@@ -11,8 +11,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import kz.olzhass.kolesa.databinding.FragmentSettingsBinding
 import kz.olzhass.kolesa.R
+import kz.olzhass.kolesa.databinding.FragmentSettingsBinding
 
 
 class SettingsFragment : Fragment() {
@@ -42,10 +42,9 @@ class SettingsFragment : Fragment() {
 
         binding.spinnerLanguage.adapter = adapter
 
-        // Чтение сохранённого значения языка из SharedPreferences
+
         val prefs = requireContext().getSharedPreferences("app_settings", Context.MODE_PRIVATE)
         val currentLang = prefs.getString("app_language", "en")
-        // Устанавливаем выбранное значение в Spinner
         val selectedIndex = when (currentLang) {
             "ru" -> 1
             "kk" -> 2
@@ -81,18 +80,14 @@ class SettingsFragment : Fragment() {
     }
 
     private fun setLocale(language: String) {
-        // Сохраняем выбранный язык в SharedPreferences
         val prefs = requireContext().getSharedPreferences("app_settings", Context.MODE_PRIVATE)
         prefs.edit().putString("app_language", language).apply()
 
-        // Перезапускаем Activity для применения изменений
         activity?.recreate()
     }
 
     private fun restartApp() {
-        // Получаем Intent для запуска главного Activity (Launcher)
         val intent = requireContext().packageManager.getLaunchIntentForPackage(requireContext().packageName)
-        // Добавляем флаг для очистки стека Activity
         intent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
         // Запускаем Activity
         intent?.let { startActivity(it) }

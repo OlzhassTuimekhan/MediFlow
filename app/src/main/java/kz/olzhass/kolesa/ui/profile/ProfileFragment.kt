@@ -21,9 +21,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import kz.olzhass.kolesa.GlobalData
-import kz.olzhass.kolesa.ui.login.MainPage
 import kz.olzhass.kolesa.R
 import kz.olzhass.kolesa.databinding.FragmentProfileBinding
+import kz.olzhass.kolesa.ui.login.MainPage
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -56,7 +56,6 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d("ProfileFragment", "onViewCreated called")
 
-        // Инициализация SharedPreferences, viewModel, получение userId
         val sharedPreferences = requireContext().getSharedPreferences("user_prefs", AppCompatActivity.MODE_PRIVATE)
         userId = sharedPreferences.getInt("user_id", -1)
         viewModel = ViewModelProvider(requireActivity()).get(ProfileViewModel::class.java)

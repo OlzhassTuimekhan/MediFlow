@@ -149,17 +149,15 @@ class MainPage : AppCompatActivity() {
         isVisible: Boolean
     ) {
         if (isVisible) {
-            // Показываем пароль
             editText.transformationMethod = HideReturnsTransformationMethod.getInstance()
-            icon.setImageResource(R.drawable.ic_eye_on) // иконка «глаз открыт»
+            icon.setImageResource(R.drawable.ic_eye_on)
         } else {
-            // Скрываем пароль
             editText.transformationMethod = PasswordTransformationMethod.getInstance()
-            icon.setImageResource(R.drawable.ic_eye_off) // иконка «глаз закрыт»
+            icon.setImageResource(R.drawable.ic_eye_off)
         }
-        // Переводим курсор в конец поля, чтобы не сбивался текст
         editText.setSelection(editText.text.length)
     }
+
     //Email Valid
     private fun isEmailValid(email: String): Boolean {
         return !TextUtils.isEmpty(email) &&
