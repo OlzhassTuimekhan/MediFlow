@@ -10,9 +10,9 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kz.olzhass.kolesa.GlobalData
-import kz.olzhass.kolesa.ui.login.MainPage
 import kz.olzhass.kolesa.R
 import kz.olzhass.kolesa.databinding.ActivityResetPasswordBinding
+import kz.olzhass.kolesa.ui.login.MainPage
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.OkHttpClient
@@ -64,7 +64,6 @@ class ResetPassword : AppCompatActivity() {
             }
 
             ivTogglePassword.setOnClickListener {
-                // Слушатель для первой иконки
                 isPasswordVisible = !isPasswordVisible  // переключаем флаг
                 togglePasswordVisibility(
                     binding.etPassword,

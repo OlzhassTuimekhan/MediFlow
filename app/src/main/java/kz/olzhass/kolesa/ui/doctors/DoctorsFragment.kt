@@ -33,11 +33,9 @@ class DoctorsFragment : Fragment() {
         val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = view.findViewById<ViewPager2>(R.id.viewPager)
 
-        // Создаём адаптер, который будет возвращать вложенные фрагменты
-        val adapter = TabsAdapter(this, viewModel) // Передаем viewModel в адаптер
+        val adapter = TabsAdapter(this, viewModel)
         viewPager.adapter = adapter
 
-        // Привязываем TabLayout к ViewPager2
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position) {
                 0 -> tab.text = "Specific"
